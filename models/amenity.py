@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Describes the class for Amenity."""
-from models.base_model import Basemodel
+from models.base_model import BaseModel
 
 class Amenity(Basemodel):
     """Presents the Amenity model.
