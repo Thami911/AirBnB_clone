@@ -40,7 +40,7 @@ class TestInstantiation(unittest.TestCase):
     
     def test_unique_ids(self):
         state1 = State()
-        state2 = state()
+        state2 = State()
         self.assertNotEqual(state1.id, state2.id)
 
 
@@ -84,7 +84,7 @@ class TestSave(unittest.TestCase):
     
     def test_save_withargs(self):
         _state = State()
-        with self.assertRaise(TypeError):
+        with self.assertRaises(TypeError):
             _state.save(None)
 
     def test_saveFileUpdates(self):
