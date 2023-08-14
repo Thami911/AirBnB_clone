@@ -127,7 +127,7 @@ class Test_Instantiation(unittest.TestCase):
         self.assertEqual(_place.updated_at, _date)
 
 class Test_Save(unittest.TestCase):
-    '''Unit tests for save function in place class'''
+    '''Unit tests for save function in Place class'''
 
     @classmethod
     def setUp(self):
@@ -177,8 +177,8 @@ class Test_Save(unittest.TestCase):
             self.assertIn(_placeid, fl.read())
 
 
-class TestPlace_to_dict(unittest.TestCase):
-    '''Unittests for to_dict function in Place class'''
+class Test_to_dict(unittest.TestCase):
+    '''Unittests for Place class to_dict function'''
 
     def test_TypeOf_to_dict(self):
         self.assertTrue(dict, type(Place().to_dict()))
